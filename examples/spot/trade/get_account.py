@@ -8,7 +8,7 @@ from examples.utils.prepare_env import get_api_key
 config_logging(logging, logging.DEBUG)
 
 # HMAC authentication with API key and secret
-api_key, api_secret = get_api_key()
+api_key, api_secret = get_api_key()dff
 
 client = Client(api_key, api_secret, base_url="https://testnet.binance.vision")
 logging.info(client.account(recvWindow=6000))
